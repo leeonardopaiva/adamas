@@ -1,0 +1,86 @@
+<header>
+
+  <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+    <a href="#"><span><img src="../assets/imgs/icone.png" alt="logo-adamas" class="logo"></span></a><br>
+
+    <ul class="nav flex-column dropside">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#"><span><i class="material-icons">dashboard</i><span
+              class="icon-text">Dashboard</span></span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+          aria-expanded="false"><span><i class="material-icons">note_add</i><span
+              class="icon-text">Cadastro</span></span></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Pessoas</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+          aria-expanded="false"><span><i class="material-icons">upload_file</i><span
+              class="icon-text">Uploads</span></span></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Enviar</a></li>
+          <li><a class="dropdown-item" href="#">Visualizar em Grid</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><span><i class="material-icons">account_tree</i><span
+              class="icon-text">Workflow</span></span></a>
+      </li>
+    </ul>
+
+  </div>
+
+  <div id="main">
+
+    <app-search-bar></app-search-bar>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="titile">BV BULGARI ></h2>
+        </div>
+
+
+        <div class="col-12">
+          <h3 class="title-favoritos">Favoritos</h3>
+        </div>
+
+        <div class="col-3">
+          <div class="cards">
+            <h3> <i class="fa fa-credit-card"></i> RH</h3>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="cards">
+            <h3> <i class="fa fa-credit-card"></i> Comercial</h3>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="cards">
+            <h3> <i class="fa fa-credit-card"></i> Vendas</h3>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="cards">
+            <h3> <i class="fa fa-credit-card"></i> Financeiro</h3>
+          </div>
+
+          <span class="add-fav"><i class="fa fa-plus" aria-hidden="true"></i></span>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+</header>
