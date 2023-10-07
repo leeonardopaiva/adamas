@@ -1,0 +1,114 @@
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.nav-tabs .nav-link.active {
+    border-color: transparent;
+    background-color: #fff !important;
+    color: #F48120 !important;
+    border-bottom: 4px solid #F48120 !important
+}
+
+.nav-fill .nav-item .nav-link,
+.nav-justified .nav-item .nav-link {
+    width: 100%;
+    color: #000;
+}
+
+.nav-tabs .nav-link {
+    border-top-left-radius: 0rem !important;
+    border-top-right-radius: 0rem !important;
+
+}
+
+.nav-tabs .nav-link.active {
+    border-color: transparent;
+    background-color: #60D0FF;
+    color: #fff;
+    font-weight: 600
+}
+
+.nav-link {
+    height: 77px;
+    background-color: #fff;
+    border-bottom:1px solid #dedede;
+}
+
+.nav-link:hover {
+    border:1px solid white;
+    border-bottom:1px solid #acacac;
+}
+
+.nav-link:focus {
+    outline: none
+}
+
+.tab-pane {
+    height: 300px
+}
+
+.form-control {
+    height: 45px;
+    position: relative
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #F48120
+}
+
+.flight-where-from:after {
+    position: absolute;
+    content: '23';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%
+}
+
+.custom-button {
+    height: 45px;
+    background-color: #F48120;
+    border: none;
+    color: #fff;
+    font-size: 21px;
+
+}
+
+.custom-button:hover,
+.custom-button:focus {
+    background-color: #F48120;
+    box-shadow: none;
+    outline: none
+}
+
+.scroll-y {
+    overflow-y: scroll;
+    height: 300px
+}
+
+button.nav-link {
+  font-size: 21px;
+}
+
+
+label.form-label {
+  float:left;
+  width:100%;
+  margin:10px 0 0 0;
+}

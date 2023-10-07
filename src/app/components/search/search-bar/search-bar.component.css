@@ -1,7 +1,10 @@
 .search {
   position: relative;
+
   /* box-shadow: 0 0 40px rgba(51, 51, 51, .1); */
 }
+
+.row-bar {  margin:30px 0 0 0;}
 
 .search input {
   height: 60px;
