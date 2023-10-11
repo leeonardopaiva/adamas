@@ -11,11 +11,13 @@ import { SearchBarComponent } from './components/search/search-bar/search-bar.co
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './components/content/content/content.component';
-import { SidebarComponent } from './components/sidebar/sidebar/sidebar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { LoginComponent } from './pages/login/login.component';
 import { VerificacaoComponent } from './pages/verificacao/verificacao.component';
 import { SuporteComponent } from './pages/suporte/suporte.component';
 import { UploadComponent } from './pages/upload/upload.component';
+import { UploadfileComponent } from './components/uploadfile/uploadfile.component';
+import { WorkflowComponent } from './pages/workflow/workflow.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { UploadComponent } from './pages/upload/upload.component';
     VerificacaoComponent,
     SuporteComponent,
     UploadComponent,
+    UploadfileComponent,
+    WorkflowComponent,
   ],
   imports: [
     BrowserModule,

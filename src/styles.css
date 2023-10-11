@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Poppins', sans-serif; }
@@ -64,4 +63,76 @@ h2.title span {
   padding:5px 11px;
   color:#F48120;
   margin:20px 0;
+}
+
+
+
+
+
+
+.tab-pane {
+    height: 300px
+}
+
+.form-control {
+    height: 45px;
+    position: relative
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #F48120
+}
+
+.flight-where-from:after {
+    position: absolute;
+    content: '23';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%
+}
+
+.custom-button {
+    height: 45px;
+    background-color: #F48120;
+    border: none;
+    color: #fff;
+    font-size: 21px;
+
+}
+
+.custom-button:hover,
+.custom-button:focus {
+    background-color: #F48120;
+    box-shadow: none;
+    outline: none
+}
+
+.scroll-y {
+    overflow-y: scroll;
+    height: 300px
+}
+
+button.nav-link {
+  font-size: 21px;
+}
+
+
+label.form-label {
+  float:left;
+  width:100%;
+  margin:10px 0 0 0;
+}
+
+
+:root {
+  --header-height: 3rem;
+  --nav-width: 68px;
+  --first-color: #0C0B0B;
+  --first-color-light: white;
+  --white-color: #f7f6fb;
+  --body-font: "Nunito", sans-serif;
+  --normal-font-size: 1rem;
+  --z-fixed: 100;
 }
