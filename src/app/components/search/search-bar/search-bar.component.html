@@ -1,35 +1,59 @@
-<div class="container-fluid">
+
+
+
   <div class="row row-bar">
-      <div class="col-10">
+
+      <div class="col-sm-10">
           <div class="search">
               <i class="fa fa-search"></i>
               <input type="text" class="form-control" placeholder="Digite o nome da página ou item para buscar">
               <button class="btn btn-secondary">Buscar</button>
           </div>
-
+          <div class="c-header-icon js-hamburger">
+            <div class="hamburger-toggle"><span class="bar-top"></span><span class="bar-mid"></span><span class="bar-bot"></span></div>
+          </div>
       </div>
-      <div class="col-2">
+      <div class="col-sm-2 group-alertas">
 
-          <!-- <ul>
-              <li><i class="fa fa-bell" aria-hidden="true"></i></li>
-              <li><i class="fa fa-globe" aria-hidden="true"></i></li>
-              <li><i class="fa fa-comment" aria-hidden="true"></i></li>
-          </ul> -->
-
-          <div class="dropdown">
-              <a class="btn dropdown-toggle toggle-alerta" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa fa-bell" aria-hidden="true"></i>
-              </a>
-
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start dropdown-alerta" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Notificações</a></li>
-                  <li><a class="dropdown-item" href="#">Cliente Adicionado</a></li>
-                  <li><a class="dropdown-item" href="#">Cliente Removido</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item active2" href="#">Ver Todos</a></li>
-                </ul>
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">
+                  notifications_active
+                  </span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="#">Notificações</a></li>
+                <li><a class="dropdown-item" href="#">Cliente Adicionado</a></li>
+                <li><a class="dropdown-item" href="#">Cliente Removido</a></li>
+              </ul>
             </div>
+
+
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">
+                  globe
+                  </span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Português</a></li>
+                <li><a class="dropdown-item" href="#">Inglês</a></li>
+                <li><a class="dropdown-item" href="#">Espanhol</a></li>
+              </ul>
+            </div>
+
+            <a class="btn" href="#" role="button">
+              <span class="material-symbols-outlined">
+                light_mode
+              </span>
+            </a>
+
+            <a class="btn" routerLink="/suporte" role="button">
+              <span class="material-symbols-outlined">
+                help
+              </span>
+            </a>
+
 
       </div>
   </div>
-</div>

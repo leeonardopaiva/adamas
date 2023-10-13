@@ -1,18 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Poppins', sans-serif; }
 
-[class*='col-'] {
+html, body { height: 100%;  padding: 0; margin: 0; }
+body {  padding: 0; margin: 0; font-family: 'Poppins', sans-serif; }
+
+a {
+  text-decoration: none;
+}
+
+
+/* [class*='col-'] {
   float:left;
-  padding: 5px;
+  padding:0;
   margin:0px;
   /* background: #dedede;
-  border:1px solid red; */
+  border:1px solid red; /
+}
+ */
+
+
+
+.col-menu {
+  width: 6%;
+ float: left;
+ background: white;
+}
+
+
+/* [class*='col-']  {
+  float:left;
+  padding:5px;
+  margin:0px;
+} */
+
+
+.container-fluid {
+  margin:0;
+  padding: 0;
 }
 
 
 /* Estilos */
+
 
 h2.title {
   margin: 30px 0;;
@@ -35,6 +64,7 @@ h2.title span {
 
 /*Cards*/
 .cards {
+  margin: 10px;
   max-width: 100%;
   background-color: #F5F5F7;
   border-radius: 12px;
@@ -64,10 +94,6 @@ h2.title span {
   color:#F48120;
   margin:20px 0;
 }
-
-
-
-
 
 
 .tab-pane {
@@ -126,13 +152,180 @@ label.form-label {
 }
 
 
-:root {
-  --header-height: 3rem;
-  --nav-width: 68px;
-  --first-color: #0C0B0B;
-  --first-color-light: white;
-  --white-color: #f7f6fb;
-  --body-font: "Nunito", sans-serif;
-  --normal-font-size: 1rem;
-  --z-fixed: 100;
+
+
+button.bottom-fix {
+  background: black;
+  position: fixed;
+  bottom: 30px;
+}
+
+
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  padding: 0 10px;
+}
+
+/*Componente Cadastro*/
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.nav-tabs .nav-link.active {
+    border-color: transparent;
+    background-color: #fff !important;
+    color: #F48120 !important;
+    border-bottom: 4px solid #F48120 !important
+}
+
+.nav-fill .nav-item .nav-link,
+.nav-justified .nav-item .nav-link {
+    width: 100%;
+    color: #000;
+}
+
+.nav-tabs .nav-link {
+    border-top-left-radius: 0rem !important;
+    border-top-right-radius: 0rem !important;
+
+}
+
+.nav-tabs .nav-link.active {
+    border-color: transparent;
+    background-color: #60D0FF;
+    color: #fff;
+    font-weight: 600
+}
+
+.nav-link {
+    height: 77px;
+    background-color: #fff;
+    border-bottom:1px solid #dedede;
+}
+
+.nav-link:hover {
+    border:0px solid white;
+    border-bottom:1px solid #acacac;
+}
+
+.nav-link:focus {
+    outline: none
+}
+
+.tab-pane {
+    height: 300px
+}
+
+.form-control {
+    height: 45px;
+    position: relative
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #F48120
+}
+
+.flight-where-from:after {
+    position: absolute;
+    content: '23';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%
+}
+
+.custom-button {
+    height: 45px;
+    background-color: #F48120;
+    border: none;
+    color: #fff;
+    font-size: 21px;
+
+}
+
+.custom-button:hover,
+.custom-button:focus {
+    background-color: #F48120;
+    box-shadow: none;
+    outline: none
+}
+
+.scroll-y {
+    overflow-y: scroll;
+    height: 300px
+}
+
+button.nav-link {
+  font-size: 21px;
+}
+
+
+label.form-label {
+  float:left;
+  width:100%;
+  margin:10px 0 0 0;
+}
+
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link {
+  width: 100%;
+  border: 0;
+}
+
+
+/*Avatar*/
+
+.avatar img {
+  width: 200px;
+  height: 200px;
+}
+
+
+
+.row>[class^=col-] {
+  /* padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: rgba(86,61,124,.15); */
+  border: 0px solid rgba(86,61,124,.2);
+}
+
+.container-fluid {
+  max-width: 1600px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/*  Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
 }

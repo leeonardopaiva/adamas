@@ -3,6 +3,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatListModule} from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { SuporteComponent } from './pages/suporte/suporte.component';
 import { UploadComponent } from './pages/upload/upload.component';
 import { UploadfileComponent } from './components/uploadfile/uploadfile.component';
 import { WorkflowComponent } from './pages/workflow/workflow.component';
+import { ButtonFloatingComponent } from './components/button-floating/button-floating.component';
 
 
 @NgModule({
@@ -35,15 +37,19 @@ import { WorkflowComponent } from './pages/workflow/workflow.component';
     UploadComponent,
     UploadfileComponent,
     WorkflowComponent,
+    ButtonFloatingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }

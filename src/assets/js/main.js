@@ -1,37 +1,58 @@
-document.addEventListener("DOMContentLoaded", function (event) {
-  const showNavbar = (toggleId, navId, bodyId, headerId) => {
-    const toggle = document.getElementById(toggleId),
-      nav = document.getElementById(navId),
-      bodypd = document.getElementById(bodyId),
-      headerpd = document.getElementById(headerId);
 
-    // Validate that all variables exist
-    if (toggle && nav && bodypd && headerpd) {
-      toggle.addEventListener("click", () => {
-        // show navbar
-        nav.classList.toggle("show");
-        // change icon
-        toggle.classList.toggle("bx-x");
-        // add padding to body
-        bodypd.classList.toggle("body-pd");
-        // add padding to header
-        headerpd.classList.toggle("body-pd");
-      });
-    }
-  };
+$(document).ready(function () {
+  $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active');
+  });
 
-  showNavbar("header-toggle", "nav-bar", "body-pd", "header");
 
-  /*===== LINK ACTIVE =====*/
-  const linkColor = document.querySelectorAll(".nav_link");
 
-  function colorLink() {
-    if (linkColor) {
-      linkColor.forEach((l) => l.classList.remove("active"));
-      this.classList.add("active");
-    }
+
+// toggleFab();
+//Fab click
+$('#prime').click(function() {
+  toggleFab();
+});
+
+//Toggle chat and links
+function toggleFab() {
+  $('.prime').toggleClass('is-active');
+  $('#prime').toggleClass('is-float');
+  $('.fab').toggleClass('is-visible');
+
+}
+
+// Ripple effect
+var target, ink, d, x, y;
+$(".fab").click(function(e) {
+  target = $(this);
+  //create .ink element if it doesn't exist
+  if (target.find(".ink").length == 0)
+    target.prepend("<span class='ink'></span>");
+
+  ink = target.find(".ink");
+  //incase of quick double clicks stop the previous animation
+  ink.removeClass("animate");
+
+  //set size of .ink
+  if (!ink.height() && !ink.width()) {
+    //use parent's width or height whichever is larger for the diameter to make a circle which can cover the entire element.
+    d = Math.max(target.outerWidth(), target.outerHeight());
+    ink.css({
+      height: d,
+      width: d
+    });
   }
-  linkColor.forEach((l) => l.addEventListener("click", colorLink));
 
-  // Your code to run since DOM is loaded and ready
+  //get click coordinates
+  //logic = click coordinates relative to page - parent's position relative to page - half of self height/width to make it controllable from the center;
+  x = e.pageX - target.offset().left - ink.width() / 2;
+  y = e.pageY - target.offset().top - ink.height() / 2;
+
+  //set the position and add class .animate
+  ink.css({
+    top: y + 'px',
+    left: x + 'px'
+  }).addClass("animate");
+});
+
 });
