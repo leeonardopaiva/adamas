@@ -14,12 +14,23 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './components/content/content/content.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { LoginComponent } from './pages/login/login.component';
-import { VerificacaoComponent } from './pages/verificacao/verificacao.component';
 import { SuporteComponent } from './pages/suporte/suporte.component';
 import { UploadComponent } from './pages/upload/upload.component';
 import { UploadfileComponent } from './components/uploadfile/uploadfile.component';
 import { WorkflowComponent } from './pages/workflow/workflow.component';
 import { ButtonFloatingComponent } from './components/button-floating/button-floating.component';
+import { HeadersuporteComponent } from './components/headersuporte/headersuporte.component';
+import { VerificationComponent } from './components/verification/verification.component';
+import { FormLoginComponent } from './components/form-login/form-login.component';
+import { ListagemComponent } from './pages/listagem/listagem.component';
+import { CardItensComponent } from './components/card-itens/card-itens.component';
+import { FiltroComponent } from './components/filtro/filtro.component';
+import { GridComponent } from './pages/grid/grid.component';
+import { GridviewComponent } from './components/gridview/gridview.component';
+import { ShareiconComponent } from './components/shared/buttons/shareicon/shareicon.component';
+import { Router } from '@angular/router';
+import { ModalComponent } from './components/shared/buttons/modal/modal.component';
+import { FlagsComponent } from './components/shared/buttons/flags/flags.component';
 
 
 @NgModule({
@@ -32,12 +43,22 @@ import { ButtonFloatingComponent } from './components/button-floating/button-flo
     ContentComponent,
     SidebarComponent,
     LoginComponent,
-    VerificacaoComponent,
     SuporteComponent,
     UploadComponent,
     UploadfileComponent,
     WorkflowComponent,
     ButtonFloatingComponent,
+    HeadersuporteComponent,
+    VerificationComponent,
+    FormLoginComponent,
+    ListagemComponent,
+    CardItensComponent,
+    FiltroComponent,
+    GridComponent,
+    GridviewComponent,
+    ShareiconComponent,
+    ModalComponent,
+    FlagsComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,3 +74,4 @@ import { ButtonFloatingComponent } from './components/button-floating/button-flo
 export class AppModule {
 
  }
+

@@ -1,0 +1,15 @@
+.profile-list li {
+  line-height: 2.5;
+}
+
+@media (max-width: 575.98px) {
+
+  .content-avatar{
+    text-align: center;
+}
+
+.list-group {
+  text-align: center;
+}
+
+}

@@ -1,0 +1,25 @@
+.btn-share {
+  float:left;
+  width:100%;
+  position: relative;
+  padding:0;
+  color: #F48120;
+
+}
+
+
+.btn-share ul li {
+  display: inline-block;
+}
+
+.btn-share ul{
+  margin:0;
+  float:right;
+}
+
+
+.btn-share ul li i{
+  margin:0 20px;
+  text-align: right;
+}
+

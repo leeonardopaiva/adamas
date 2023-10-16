@@ -1,0 +1,36 @@
+
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.material-symbols-outlined {
+  font-size: 26px;
+  color:#9C9C9C;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #F48120;
+}
+
+.flagsicon img {
+  width: 19px;
+}
+
+@media (max-width: 575.98px) {
+
+  .group-alertas{
+    padding: 15px 0;
+    text-align: center;
+}
+
+}

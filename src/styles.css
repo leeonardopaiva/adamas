@@ -1,12 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-html, body { height: 100%;  padding: 0; margin: 0; }
+html, body { height: 100%;  padding: 0; margin: 0; overflow-x: hidden;}
 body {  padding: 0; margin: 0; font-family: 'Poppins', sans-serif; }
 
 a {
   text-decoration: none;
+  color:initial;
 }
+
+.f-right {
+  float:right
+}
+
+button.add-fav {
+  background: white;
+  border:2px solid #F48120;
+  color:#F48120;;
+}
+button.add-fav:hover {
+  background: #F48120;
+  color:white;
+}
+
 
 
 /* [class*='col-'] {
@@ -61,16 +77,32 @@ h2.title span {
 }
 
 
+button.btn-orange {
+  background-color: #F48120;
+  color:white;
+}
+
+button.btn-orange:hover  {
+  background-color: #F48120;
+  color:white;
+}
+
+.border-0 {
+  border: 0;
+}
+
 
 /*Cards*/
 .cards {
-  margin: 10px;
-  max-width: 100%;
+  float: left;
+  width: 100%;
+  margin: 30px auto;
   background-color: #F5F5F7;
   border-radius: 12px;
   font-family: 'Manrope', sans-serif;
-  border:2px solid #dedede;
+  border:2px solid #F5F5F7;
   transition:ease 0.3s;
+  position: relative;
 }
 
 .cards h3 {
@@ -84,6 +116,48 @@ h2.title span {
   border:2px solid #F48120;
   transition:ease 0.3s;
 }
+
+.cards-btn a {
+  color:#acacac;
+}
+
+.cards-btn {  opacity: 1; position: fixed; }
+
+
+ .cards-btn {
+  margin: -50px 0 0px 0;
+  display:block;
+  position: relative;
+  padding:0 20px;
+  color: #F48120;
+  float:left;
+  width:100%;
+}
+
+
+/* .cards:hover + .cards-btn {
+  background:red;
+  width:100%;
+  display: block;
+  position: relative;
+  opacity: 1;
+} */
+
+.cards-btn ul li {
+  display: inline-block;
+}
+
+.cards-btn ul{
+  margin:0;
+  float:right;
+}
+
+
+.cards-btn ul li i{
+  margin:0 20px;
+  text-align: right;
+}
+
 
 
 .add-fav {
@@ -213,7 +287,6 @@ button.bottom-fix {
 
 .nav-tabs .nav-link.active {
     border-color: transparent;
-    background-color: #60D0FF;
     color: #fff;
     font-weight: 600
 }
@@ -316,16 +389,62 @@ label.form-label {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  #sidebar {
+    display: none;
+  }
+
+  #navresp {
+    display: block;
+  }
+
+  .cards-btn ul {
+      margin: 0;
+      float: none;
+      width: 100%;
+      text-align: center;
+      padding: 0;
+  }
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  html {
+      overflow-x: hidden;
+    }
+
+    h2.title {
+      margin: 30px 0;
+      color: #F48120;
+      font-weight: bold;
+      font-size: 21px;
+      text-align: center;
+    }
+
+    .group-alertas {
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    /*Login Page*/
+    .bg-login {
+      display: none;
+    }
+
+    .form-center[_ngcontent-ng-c2960387480] {
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .navbar {display: none;}
 }
 
 /*  Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .navbar {display: none;}
 }

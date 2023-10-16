@@ -1,0 +1,36 @@
+.divider {
+  margin:50px 0;
+}
+
+.m-b-80 {
+  margin-bottom: 80px;
+}
+
+
+
+ .btn-lista {
+  float:left;
+  width:100%;
+  position: relative;
+  padding:20px 0;
+  color: #F48120;
+
+}
+
+
+
+
+.btn-lista ul li {
+  display: inline-block;
+}
+
+.btn-lista ul{
+  margin:0;
+  float:right;
+}
+
+
+.btn-lista ul li i{
+  margin:0 20px;
+  text-align: right;
+}

@@ -15,31 +15,23 @@
       </div>
       <div class="col-sm-2 group-alertas">
 
-            <div class="btn-group">
+            <div class="btn-group group-btn-alertas">
               <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="material-symbols-outlined">
                   notifications_active
                   </span>
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item active" href="#">Notificações</a></li>
-                <li><a class="dropdown-item" href="#">Cliente Adicionado</a></li>
+                <li><a class="dropdown-item" href="#">Notificações</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item active" href="#">Cliente Adicionado</a></li>
                 <li><a class="dropdown-item" href="#">Cliente Removido</a></li>
               </ul>
             </div>
 
 
             <div class="btn-group">
-              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="material-symbols-outlined">
-                  globe
-                  </span>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Português</a></li>
-                <li><a class="dropdown-item" href="#">Inglês</a></li>
-                <li><a class="dropdown-item" href="#">Espanhol</a></li>
-              </ul>
+                <app-flags></app-flags>
             </div>
 
             <a class="btn" href="#" role="button">
