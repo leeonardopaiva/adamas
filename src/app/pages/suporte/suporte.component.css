@@ -30,3 +30,28 @@
   margin:0 10px;
 }
 
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  color:red;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  color: var(--bs-btn-active-color);
+  background-color: var(--bs-btn-active-bg);
+  border-color: var(--bs-btn-active-border-color);
+}
+
+
+@media (max-width: 575.98px) {
+  #accordion {
+    margin: 50px 0 80px 0;
+  }
+
+  .btn-link{
+    color: #F48120;
+    font-size: 22px;
+}
+
+
+}
+
+

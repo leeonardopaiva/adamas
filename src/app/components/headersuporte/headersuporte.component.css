@@ -58,3 +58,21 @@ header {
 .nav-item a:hover {
   color:#F48120;
 }
+
+@media (max-width: 575.98px) {
+  .headersuporte {
+    text-align: center;
+  }
+
+  .headersuporte img {
+    width:180px;
+    margin: 15px 0;
+  }
+
+  .headersuporte figure {
+    max-height: 160px;
+  }
+
+
+
+}

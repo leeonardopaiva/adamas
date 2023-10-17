@@ -21,4 +21,13 @@ header {
     display: block;
   }
 
+  .dropdown-item {
+    color:#8b8b8b;
+  }
+
+  .navbar-nav .dropdown-menu {
+    background-color: #181818;
+    border: 1px solid #2c2c2cde;
+  }
+
 }
