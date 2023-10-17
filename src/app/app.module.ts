@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatListModule} from '@angular/material/list';
-import {MatButtonModule} from '@angular/material/button';
+import { MatListModule} from '@angular/material/list';
+import { MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,11 +28,9 @@ import { FiltroComponent } from './components/filtro/filtro.component';
 import { GridComponent } from './pages/grid/grid.component';
 import { GridviewComponent } from './components/gridview/gridview.component';
 import { ShareiconComponent } from './components/shared/buttons/shareicon/shareicon.component';
-import { Router } from '@angular/router';
-import { ModalComponent } from './components/shared/buttons/modal/modal.component';
 import { FlagsComponent } from './components/shared/buttons/flags/flags.component';
-
-
+import { ModalComponent } from './components/shared/buttons/modal/modal.component';
+import { VerificacaoComponent } from './pages/verificacao/verificacao.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,8 +55,9 @@ import { FlagsComponent } from './components/shared/buttons/flags/flags.componen
     GridComponent,
     GridviewComponent,
     ShareiconComponent,
-    ModalComponent,
     FlagsComponent,
+    ModalComponent,
+    VerificacaoComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +65,7 @@ import { FlagsComponent } from './components/shared/buttons/flags/flags.componen
     BrowserAnimationsModule,
     MatSidenavModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -74,4 +73,3 @@ import { FlagsComponent } from './components/shared/buttons/flags/flags.componen
 export class AppModule {
 
  }
-

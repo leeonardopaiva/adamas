@@ -422,6 +422,10 @@ label.form-label {
       overflow-x: hidden;
     }
 
+    #sidebar {
+      display: none;
+    }
+
 
     h2.title {
       margin: 30px 0;
@@ -456,9 +460,47 @@ label.form-label {
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .navbar {display: none;}
+
+
+
 }
 
 /*  Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
   .navbar {display: none;}
 }
+
+/*
+@media (max-width: 991.98px) {
+  #content-cards  .col-sm-3 {
+      width: 50%;
+  }
+
+  .cards-btn ul {
+    margin: 0;
+    float: left;
+    width: 100%;
+    padding: 0;
+  }
+
+  .cards-btn {
+      margin: -50px 0 0px 0;
+      display: block;
+      position: relative;
+      padding: 0;
+      color: #F48120;
+      float: left;
+      width: 100%;
+      text-align: center;
+  }
+
+    .row-bar .col-sm-10{
+    width:100%;
+    }
+
+    .group-alertas {
+      display: none;
+    }
+
+ }
+*/

@@ -8,9 +8,11 @@ import { SuporteComponent } from './pages/suporte/suporte.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ListagemComponent } from './pages/listagem/listagem.component';
 import { GridComponent } from './pages/grid/grid.component';
+import { VerificacaoComponent } from './pages/verificacao/verificacao.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
+  { path: 'verificacao', component: VerificacaoComponent },
   { path: 'home', component: HomeComponent },
   { path: 'cadastro', component: CadastroComponent },
   { path: 'listagem', component: ListagemComponent },
@@ -18,7 +20,7 @@ const routes: Routes = [
   { path: 'upload', component: UploadComponent },
   { path: 'workflow', component: WorkflowComponent },
   { path: 'suporte', component: SuporteComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 
 @NgModule({

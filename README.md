@@ -1,27 +1,35 @@
-# AdamasProject
+<h2>Adamas Enterprise</h2>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+## Sobre
+Projeto desenvolvido visando proporcionar uma melhor experiência durante a navegação do usuario, seja através do um dispositivo desktop ou mobile.
 
-## Development server
+## Organização
+A estrutura do projeto foi divido entre componentes (app/components/) e páginas (app/pages/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Implantação
+Clone o projeto
+Instalem as dependências via <b>`npm install`</b> ou <b>`yarn install`</b>
+Inicie o projeto utlizando <b>`ng serve`</b>
 
-## Code scaffolding
+## Tecnologias
+Angular 16.2.4
+Bootstrap 5.0.2
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Servidor de desenvolvimento
+Utilize <b>`ng serve`</b> para iniciar o servidor de desenvolvimento. Acesse: <b> `http://localhost:4200/`</b>. A aplicação vai ser automaticamente carregada se você editar qualquer arquivo.
 
-## Build
+## Como gerar um componente
+Para gerar um novo componente use o comando: `ng generate component nome-componente`. Você também pode usar: `ng generate directive|pipe|service|class|guard|interface|enum|module`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Realizar o Build
+Para gerar o Build do projeto use: `ng build`. Os arquivos do projeto serão gerados na pasta `dist/` do projeto.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Testes Unitarios
+Use o comando: `ng test` via [Karma](https://karma-runner.github.io)
 
-## Running end-to-end tests
+## Testes end-to-end
+Use o comando: `ng e2e` para executor os testes pela plataforma de sua preferencia.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Ajuda
+Para mais dúvidas, utilize o Help do Angular CLI através do comando `ng help` e conferir toda documentação em: https://angular.io/cli
