@@ -368,10 +368,10 @@ label.form-label {
 
 
 /*Avatar*/
-
 .avatar img {
   width: 200px;
   height: 200px;
+  border: 5px solid #e7e7e7;
 }
 
 
@@ -405,6 +405,14 @@ label.form-label {
       text-align: center;
       padding: 0;
   }
+
+  /*Avatar*/
+  .avatar img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #e7e7e7;
+  }
+
 
 }
 
