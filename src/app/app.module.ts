@@ -1,3 +1,4 @@
+import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserModule } from '@angular/platform-browser';
@@ -6,7 +7,6 @@ import { MatListModule} from '@angular/material/list';
 import { MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header/header.component';
 import { SearchBarComponent } from './components/search/search-bar/search-bar.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
@@ -31,6 +31,10 @@ import { ShareiconComponent } from './components/shared/buttons/shareicon/sharei
 import { FlagsComponent } from './components/shared/buttons/flags/flags.component';
 import { ModalComponent } from './components/shared/buttons/modal/modal.component';
 import { VerificacaoComponent } from './pages/verificacao/verificacao.component';
+import { HttpClientModule} from '@angular/common/http';
+import { ChartComponent } from './components/chart/chart.component';
+import { ChatBarComponent } from './components/chart/chat-bar/chat-bar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +61,9 @@ import { VerificacaoComponent } from './pages/verificacao/verificacao.component'
     ShareiconComponent,
     FlagsComponent,
     ModalComponent,
-    VerificacaoComponent
+    VerificacaoComponent,
+    ChartComponent,
+    ChatBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,10 +72,12 @@ import { VerificacaoComponent } from './pages/verificacao/verificacao.component'
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {
 
  }

@@ -1,6 +1,7 @@
 .cards {
   float: left;
   width: 100%;
+  min-height: 250px;
   margin: 10px auto;
   background-color: #F5F5F7;
   border-radius: 12px;
