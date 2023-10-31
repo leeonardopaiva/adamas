@@ -1,0 +1,42 @@
+.nav-side ul {
+  float:left;
+  width:100%;
+  padding:10px;
+}
+
+
+.nav-side li {
+  float:left;
+  width:100%;
+}
+
+.nav-side a {
+  text-decoration: none;
+  width: 100%;
+  float: left;
+  margin:10px 0;
+  vertical-align: middle;
+  color:white;
+}
+
+.nav-side span, .nav-side i {
+  vertical-align: middle;
+}
+
+
+#offcanvasExample {
+  background-color: black;
+}
+
+.nav-side i {
+  margin:0 10px;
+}
+
+button.btn-closeoff {
+  float:right;
+  color:white;
+  background-color: transparent;
+  border:0;
+}
+
+

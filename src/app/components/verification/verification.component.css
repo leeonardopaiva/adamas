@@ -33,3 +33,20 @@
   margin:10px 0;
   padding: 0;
 }
+
+.form-verification .row {
+  justify-content: center
+}
+
+.form-verification input {
+  height: 80px;
+  /* background-color: #F5F5F7; */
+}
+
+.form-verification button[type=submit] {
+  -ms-flex-item-align: center;
+  width: 300px;
+  margin:20px 0;
+  /* background-color: #F5F5F7; */
+}
+

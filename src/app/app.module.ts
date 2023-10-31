@@ -34,6 +34,11 @@ import { VerificacaoComponent } from './pages/verificacao/verificacao.component'
 import { HttpClientModule} from '@angular/common/http';
 import { ChartComponent } from './components/chart/chart.component';
 import { ChatBarComponent } from './components/chart/chat-bar/chat-bar.component';
+import { OffcanvasComponent } from './components/offcanvas/offcanvas.component';
+import { DetailsWorkflowComponent } from './components/workflow/details-workflow/details-workflow.component';
+import { NewWorkflowComponent } from './components/workflow/new-workflow/new-workflow.component';
+import { WorkflowDetailsComponent } from './pages/workflow-details/workflow-details.component';
+import { UploadViewComponent } from './pages/upload-view/upload-view.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +69,11 @@ import { ChatBarComponent } from './components/chart/chat-bar/chat-bar.component
     VerificacaoComponent,
     ChartComponent,
     ChatBarComponent,
+    OffcanvasComponent,
+    DetailsWorkflowComponent,
+    NewWorkflowComponent,
+    WorkflowDetailsComponent,
+    UploadViewComponent,
   ],
   imports: [
     BrowserModule,

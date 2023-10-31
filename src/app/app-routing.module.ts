@@ -9,6 +9,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { ListagemComponent } from './pages/listagem/listagem.component';
 import { GridComponent } from './pages/grid/grid.component';
 import { VerificacaoComponent } from './pages/verificacao/verificacao.component';
+import { WorkflowDetailsComponent } from './pages/workflow-details/workflow-details.component';
+import { UploadViewComponent } from './pages/upload-view/upload-view.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -18,7 +20,9 @@ const routes: Routes = [
   { path: 'listagem', component: ListagemComponent },
   { path: 'grid', component: GridComponent },
   { path: 'upload', component: UploadComponent },
+  { path: 'upload-view', component: UploadViewComponent },
   { path: 'workflow', component: WorkflowComponent },
+  { path: 'workflow-details', component: WorkflowDetailsComponent },
   { path: 'suporte', component: SuporteComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];

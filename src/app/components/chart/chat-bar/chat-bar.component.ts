@@ -16,7 +16,7 @@ export class ChatBarComponent implements OnInit {
       data: {
           labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
           datasets: [{
-              label: '% de Crescimento',
+              label: '% de Usuários ',
               data: [0, 10, 20, 40, 50, 80, 100],
               backgroundColor: [
                   'rgba(255, 99, 132, 0.2)',

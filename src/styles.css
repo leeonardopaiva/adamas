@@ -2,7 +2,46 @@
 
 
 html, body { height: 100%;  padding: 0; margin: 0; overflow-x: hidden;}
-body {  padding: 0; margin: 0; font-family: 'Poppins', sans-serif; }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+#dark {
+--input-color:black;
+}
+
+#light {
+--input-color:white;
+}
+
+#light,
+:root {
+  --bg-color:white;
+  --text-color:gray;
+  --bg-color-cards:#F5F5F7;
+}
+
+#dark,
+:root:has(#dark:checked) {
+  --bg-color:black;
+  --text-color:white;
+  --bg-color-cards:black;
+}
+
+
+.cards,
+:root:has(#dark:checked){
+  --bg-color:black;
+}
+
+
+
+
 
 a {
   text-decoration: none;
@@ -21,6 +60,12 @@ button.add-fav {
 button.add-fav:hover {
   background: #F48120;
   color:white;
+}
+
+
+
+.row.p-content {
+  padding:0 0 5% 0;
 }
 
 
@@ -97,12 +142,12 @@ button.btn-orange:hover  {
   float: left;
   width: 100%;
   margin: 30px auto;
-  background-color: #F5F5F7;
   border-radius: 12px;
   font-family: 'Manrope', sans-serif;
   border:2px solid #F5F5F7;
   transition:ease 0.3s;
   position: relative;
+  background-color: var(--bg-color-cards);
 }
 
 .cards h3 {
@@ -383,9 +428,21 @@ label.form-label {
   border: 0px solid rgba(86,61,124,.2);
 }
 
-.container-fluid {
+/* .container-fluid {
   max-width: 1600px;
+} */
+
+.container-fluid {
+  padding: 0 40px;
 }
+
+.btn-bars {
+  font-size: 36px;
+  color:gray;
+}
+
+
+
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

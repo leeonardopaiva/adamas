@@ -1,8 +1,9 @@
 
 $(document).ready(function () {
-  $('#sidebarCollapse').on('click', function () {
-      $('#sidebar').toggleClass('active');
-  });
+  // $('#sidebarCollapse').on('click', function () {
+  //     $('#sidebar').toggleClass('active');
+  // });
+
 
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
