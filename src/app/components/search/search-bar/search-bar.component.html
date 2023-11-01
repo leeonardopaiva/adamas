@@ -4,7 +4,7 @@
   <div class="row row-bar">
 
       <div class="col-sm-1">
-        <button class="btn btn-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <button class="btn btn-bars bt-desk" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
           <i class="fa fa-bars"></i>
         </button>
       </div>
@@ -42,15 +42,7 @@
             </div>
 
             <div class="btn-group group-btn-alertas">
-              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="material-symbols-outlined">
-                  light_mode
-                  </span>
-              </button>
-              <ul class="dropdown-menu">
-                <li class="dropdown-item"><input name="color" id="light" type="radio"> Claro </li>
-                <li class="dropdown-item"><input name="color" id="dark" type="radio"> Escuro </li>
-              </ul>
+                <app-colortheme></app-colortheme>
             </div>
 
 

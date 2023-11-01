@@ -39,6 +39,7 @@ import { DetailsWorkflowComponent } from './components/workflow/details-workflow
 import { NewWorkflowComponent } from './components/workflow/new-workflow/new-workflow.component';
 import { WorkflowDetailsComponent } from './pages/workflow-details/workflow-details.component';
 import { UploadViewComponent } from './pages/upload-view/upload-view.component';
+import { ColorthemeComponent } from './components/shared/buttons/colortheme/colortheme.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +75,7 @@ import { UploadViewComponent } from './pages/upload-view/upload-view.component';
     NewWorkflowComponent,
     WorkflowDetailsComponent,
     UploadViewComponent,
+    ColorthemeComponent,
   ],
   imports: [
     BrowserModule,

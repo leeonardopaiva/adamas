@@ -16,6 +16,10 @@ header {
   display: none;
 }
 
+.btn-bars {
+  color:white;
+}
+
 @media (max-width: 575.98px) {
   #navresp {
     display: block;
