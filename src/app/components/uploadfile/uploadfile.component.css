@@ -1,5 +1,5 @@
 .file-upload-contain {
-  background-color: #F5F5F7;
+  background-color:var(--bg-fileupload);
   width:100%;
   float: left;
   text-align: center;

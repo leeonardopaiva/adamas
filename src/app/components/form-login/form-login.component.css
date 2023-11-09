@@ -33,11 +33,13 @@
 .btn-black {
   background: #0C0B0B;
   color:white;
+  border: 1px solid white;
 }
 
 .btn-black:hover {
   background: #F48120;
   color:white;
+  border: 1px solid #F48120;
 }
 
 .lbl-senha {

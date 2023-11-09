@@ -16,10 +16,12 @@ header {
   height: 60px;
   text-indent: 25px;
   border: 2px solid #F5F5F7;
-  background: #F5F5F7;
+  background: var(--bg-color-input);
   border-radius: 12px;
   margin:30px 0 30px 0;
 }
+
+
 
 
 .search input:focus {
@@ -66,6 +68,8 @@ header {
 .nav {
   margin: 30px 0;
 }
+
+
 
 @media (max-width: 575.98px) {
   .headersuporte {

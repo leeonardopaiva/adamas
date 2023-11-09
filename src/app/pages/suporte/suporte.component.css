@@ -10,7 +10,7 @@
 }
 
 .card-header {
-  background-color: white;
+  background-color:var(--bg-color);
   color:#F48120;
 }
 
@@ -39,6 +39,9 @@
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
+
+
+
 
 
 @media (max-width: 575.98px) {

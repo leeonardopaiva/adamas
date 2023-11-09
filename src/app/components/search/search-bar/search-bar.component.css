@@ -10,7 +10,8 @@
   height: 60px;
   text-indent: 25px;
   border: 2px solid #F5F5F7;
-  background: #F5F5F7;
+  /* background: #F5F5F7; */
+  background-color: var(--bg-color-input);
   border-radius: 12px;
 }
 

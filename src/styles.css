@@ -13,10 +13,17 @@ body {
 
 #dark {
 --input-color:black;
+--bg-color-input:black;
+--bg-color-light:#F8F9FA;
+--bg-fileupload:black;
 }
 
 #light {
 --input-color:white;
+--bg-color-input:#F5F5F7;
+--bg-tlight-th:#F8F9FA;
+--bg-color-light:#F8F9FA;
+--bg-fileupload:#F5F5F7;
 }
 
 #light,
@@ -24,6 +31,10 @@ body {
   --bg-color:white;
   --text-color:gray;
   --bg-color-cards:#F5F5F7;
+  --bg-color-input:#F5F5F7;
+  --bg-color-light:#F8F9FA;
+  --btn-border-color-light:#F8F9FA;
+  --bg-fileupload:#F5F5F7;
 }
 
 #dark,
@@ -31,19 +42,79 @@ body {
   --bg-color:black;
   --text-color:white;
   --bg-color-cards:black;
+  --bg-color-input:black;
+  --bs-body-bg:black;
+  --bg-color-light:rgb(32, 32, 32);
+  --bg-fileupload:black;
 }
 
 
-.cards,
+
+
+.cards, .search input, .form-login button, #myTab, ::placeholder
 :root:has(#dark:checked){
   --bg-color:black;
+  --bg-color-input:#F5F5F7;
+}
+
+/*Custom Elements Bootstrap*/
+
+.dropdown-item {
+  color: var(--text-color);
+}
+
+.table>:not(caption)>*>* {
+  padding: 0.5rem 0.5rem;
+  color: var(--text-color);
+}
+
+.table-light {
+  background-color: var(--bg-color);
+}
+
+.table-light {
+  --bs-table-bg:var(--bg-color-light);
+  /* --bs-table-bg:var(--bg-color); */
+}
+
+.btn {
+  color: var(--text-color);
+  background-color: var(--bs-btn-hover-bg);
+}
+
+.dropdown-menu.show {
+  display: block;
+  border-color: var(--btn-border-color-light);
+  /* border: 1px solid var(--btn-border-color-light); */
 }
 
 
+.card-header {
+  background: var(--bg-color);
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--text-color);
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--text-color);
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--text-color);
+}
 
 
+.bg-logo-gray {
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray; /* IE */
+}
 
 
+/*Main*/
 
 a {
   text-decoration: none;
@@ -55,7 +126,6 @@ a {
 }
 
 button.add-fav {
-  background: white;
   border:2px solid #F48120;
   color:#F48120;;
 }
@@ -71,7 +141,6 @@ button.add-fav:hover {
 }
 
 
-
 /* [class*='col-'] {
   float:left;
   padding:0;
@@ -82,20 +151,11 @@ button.add-fav:hover {
  */
 
 
-
 .col-menu {
   width: 6%;
  float: left;
  background: white;
 }
-
-
-/* [class*='col-']  {
-  float:left;
-  padding:5px;
-  margin:0px;
-} */
-
 
 .container-fluid {
   margin:0;
@@ -103,8 +163,13 @@ button.add-fav:hover {
 }
 
 
-/* Estilos */
+.box-flags {
+  padding: 12px 0;
+}
 
+
+
+/* Estilos */
 
 h2.title {
   margin: 30px 0;;
@@ -140,6 +205,7 @@ button.btn-orange:hover  {
 
 
 /*Cards*/
+
 .cards {
   float: left;
   width: 100%;
