@@ -11,11 +11,28 @@ body {
 }
 
 
+
+
+/* .bg-logo-gray {
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;  IE
+} */
+
+.logo {
+  -webkit-filter:var(--filter-cont);
+	filter: var(--filter-cont);
+	filter: white; /* IE */
+}
+
+
 #dark {
 --input-color:black;
 --bg-color-input:black;
 --bg-color-light:#F8F9FA;
 --bg-fileupload:black;
+--filter-cont:contrast(0);
+--bg-color-white:black;
 }
 
 #light {
@@ -24,6 +41,8 @@ body {
 --bg-tlight-th:#F8F9FA;
 --bg-color-light:#F8F9FA;
 --bg-fileupload:#F5F5F7;
+--filter-cont:contrast(1);
+--bg-color-white:#fff;
 }
 
 #light,
@@ -35,6 +54,8 @@ body {
   --bg-color-light:#F8F9FA;
   --btn-border-color-light:#F8F9FA;
   --bg-fileupload:#F5F5F7;
+  --filter-cont:contrast(1);
+  --bg-color-white:#fff;
 }
 
 #dark,
@@ -46,16 +67,12 @@ body {
   --bs-body-bg:black;
   --bg-color-light:rgb(32, 32, 32);
   --bg-fileupload:black;
+  --filter-cont:contrast(0);
+  --bg-color-white:black;
 }
 
 
 
-
-.cards, .search input, .form-login button, #myTab, ::placeholder
-:root:has(#dark:checked){
-  --bg-color:black;
-  --bg-color-input:#F5F5F7;
-}
 
 /*Custom Elements Bootstrap*/
 
@@ -107,11 +124,7 @@ body {
 }
 
 
-.bg-logo-gray {
-  -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	filter: gray; /* IE */
-}
+
 
 
 /*Main*/

@@ -2,12 +2,13 @@
 .card-item {
   float:left;
   width: 100%;
-  background-color: white;
+  background:var(--bg-color-white);
   border-radius: 12px;
   font-family: 'Manrope', sans-serif;
   border:0px solid #F5F5F7;
   transition:ease 0.3s;
   position: relative;
+  border:1px solid white;
 
   box-shadow: 1px 5px 18px -5px rgba(0,0,0,0.18);
 -webkit-box-shadow: 1px 5px 18px -5px rgba(0,0,0,0.18);
